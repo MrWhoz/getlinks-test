@@ -1,0 +1,29 @@
+{
+  "name": "getlinks-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon ./bin/www",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "babel-eslint": "^9.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.4.0",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "eslint": "5.6.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "flow-bin": "^0.88.0",
+    "nodemon": "^1.18.8"
+  }
+}

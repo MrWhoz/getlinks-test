@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  min-width: 250px;
+  margin: 1rem;
+  flex: 1 0 20%;
+  border: 1px solid black;
+  overflow: hidden;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  .thumbnail {
+    min-height: 200px;
+    object-fit: cover;
+  }
+
+  .news-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    min-height: 2rem;
+    max-height: 2rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+  }
+
+
+  .news-content {
+    // white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-height: 40vmax;
+    flex: 1 0 90vmin;
+    max-width: 90vmin;
+  }
+
+  .thumbnail {
+    min-height: 30vmin;
+    max-height: 30vmin;
+  }
+
+  .news-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0.5rem;
+  }
+}

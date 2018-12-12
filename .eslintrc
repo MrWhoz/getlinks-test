@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "no-extra-semi": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "no-tabs": "error",
+    "array-bracket-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "never"],
+    "semi": ["error", "never"],
+    "flowtype/semi": 2,
+    "flowtype/space-after-type-colon": ["error", "always"],
+    "flowtype/space-before-type-colon": ["error", "never"],
+    "flowtype/generic-spacing": ["error", "never"],
+    "flowtype/no-dupe-keys": 2,
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "space-before-blocks": "error",
+    "comma-dangle": ["error", "never"],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-console": "warn"
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  }
+}

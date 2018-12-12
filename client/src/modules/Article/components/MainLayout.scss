@@ -1,0 +1,35 @@
+.main-layout {
+  width: 100vw;
+  padding: 0 10vmax;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input-wrapper {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-btn {
+      padding: 0.5rem;
+      background-color: #28d2af;
+      width: 50px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
